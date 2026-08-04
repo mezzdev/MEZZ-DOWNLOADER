@@ -1,13 +1,3 @@
-"""
-MEZZ DOWNLOADER — Édition Terminal
------------------------------------
-Version console de MEZZ DOWNLOADER : colle un lien YouTube ou TikTok,
-consulte un aperçu de la vidéo, choisis vidéo (4K si dispo) ou audio (MP3),
-et télécharge.
-
-Auteur : Mezz
-"""
-
 import itertools
 import os
 import sys
