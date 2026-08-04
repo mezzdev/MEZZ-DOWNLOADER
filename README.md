@@ -12,13 +12,13 @@ powershell
 
 puis appuyez sur **Entrée**.
 
-3. Installez les dépendances avec :
+3. Installez les dépendances avec cette commande :
 
 ```powershell
 pip install -r requirements.txt
 ```
 
-4. Une fois l'installation terminée, lancez le programme avec :
+4. Une fois l'installation terminée, lancez le programme avec cette commande :
 
 ```powershell
 py Mezz.py
