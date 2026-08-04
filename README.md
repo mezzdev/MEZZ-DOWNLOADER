@@ -5,7 +5,7 @@
 1. Clonez le dépôt avec Git :
 
 ```powershell
-git clone <https://github.com/xMezz0/MEZZ-DOWNLOADER/>
+git clone https://github.com/xMezz0/MEZZ-DOWNLOADER
 ```
 
 2. Ouvrez le dossier **MEZZ DOWNLOADER** :
