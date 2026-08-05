@@ -31,10 +31,7 @@ LOGO = r"""
 BOX_WIDTH = 44
 
 def resource_path(relative_path):
-    """
-    Retourne le chemin absolu d'une ressource (ffmpeg, ...).
-    Fonctionne en script normal et une fois compilé avec PyInstaller (--onefile).
-    """
+
     try:
         base_path = sys._MEIPASS
     except AttributeError:
@@ -43,7 +40,7 @@ def resource_path(relative_path):
 
 
 def find_ffmpeg():
-    """Cherche un ffmpeg.exe livré à côté du programme, sinon utilise le PATH."""
+
     local_ffmpeg = resource_path("ffmpeg.exe")
     if os.path.isfile(local_ffmpeg):
         return local_ffmpeg
@@ -63,8 +60,6 @@ def clear_screen():
 
 
 def setup_console():
-    """Configure la console Windows : titre de la fenêtre + encodage UTF-8
-    (nécessaire pour afficher correctement les caractères du logo et des cadres)."""
     if os.name == "nt":
         os.system("title MEZZ DOWNLOADER")
         os.system("chcp 65001 > nul")
@@ -105,7 +100,7 @@ def print_header():
 
 
 def with_spinner(message, func, *args, **kwargs):
-    """Exécute func(*args, **kwargs) dans un thread en affichant un spinner."""
+
     outcome = {}
 
     def worker():
